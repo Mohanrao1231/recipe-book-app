@@ -4,12 +4,12 @@ const recipeListEl = document.getElementById("recipe-list");
 function displayRecipes(recipes) {
   recipeListEl.innerHTML = "";
   recipes.forEach((recipe) => {
-    const recipeItemEl = document.createElement("div"); // Changed from <li> to <div>
+    const recipeItemEl = document.createElement("div");
     recipeItemEl.classList.add("recipe-item");
 
     const recipeImageEl = document.createElement("img");
     recipeImageEl.src = recipe.image;
-    recipeImageEl.alt = "recipe image";
+    recipeImageEl.alt = "Recipe image";
 
     const recipeTitleEl = document.createElement("h2");
     recipeTitleEl.innerText = recipe.title;
@@ -22,9 +22,9 @@ function displayRecipes(recipes) {
     `;
 
     const recipeLinkEl = document.createElement("a");
-    recipeLinkEl.href = recipe.sourceUrl;
+    recipeLinkEl.href = recipe.spoonacularSourceUrl || recipe.sourceUrl; // Use Spoonacular URL if available
     recipeLinkEl.innerText = "View Recipe";
-    recipeLinkEl.target = "_blank"; // Open in new tab
+    recipeLinkEl.target = "_blank";
 
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
@@ -65,3 +65,4 @@ async function init() {
 }
 
 init();
+
