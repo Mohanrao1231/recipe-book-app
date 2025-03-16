@@ -36,6 +36,7 @@ Nginx/Apache                                	Web server for production (if confi
 ## 📂 **Project Structure**  
 
 recipe-book-app/
+
 │── Dockerfile         # Docker configuration for containerization
 
 
