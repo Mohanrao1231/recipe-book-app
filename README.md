@@ -37,12 +37,26 @@ Nginx/Apache                                	Web server for production (if confi
 
 recipe-book-app/
 │── Dockerfile         # Docker configuration for containerization
+
+
 │── Homepage.png       # Screenshot of the homepage
+
+
 │── Features1.png      # Screenshot of feature section 1
+
+
 │── Features2.png      # Screenshot of feature section 2
+
+
 │── README.md          # Documentation file
+
+
 │── index.html         # Main HTML file (Frontend UI)
+
+
 │── index.js           # JavaScript file for interactivity
+
+
 │── style.css          # CSS file for styling
 
 
@@ -93,8 +107,11 @@ CMD ["nginx", "-g", "daemon off;"]
 
      
 4)Commit Changes & Push
-     git add .
+
+     git add . 
+     
      git commit -m "Added new feature"
+     
      git push origin new-feature
 
 
@@ -107,15 +124,21 @@ CMD ["nginx", "-g", "daemon off;"]
         Yes! Just open index.html in your browser.
 
 🔹 How do I stop the running Docker container?
+
        docker ps            # Get container ID  
+       
        docker stop <container-id>
   
 🔹 How do I remove the container and image?
+
       docker rm <container-id>  # Remove container  
+      
       docker rmi my-web-app     # Remove image
 
 💬 Contact & Support
+
 📧 Email: mohanchokkaku@gmail.com
+
 📌 GitHub: Mohanrao1231
 
 
