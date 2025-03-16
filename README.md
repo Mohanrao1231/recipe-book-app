@@ -37,28 +37,28 @@ Nginx/Apache                                	Web server for production (if confi
 
 recipe-book-app/
 
-│── Dockerfile         # Docker configuration for containerization
+│── Dockerfile                 # Docker configuration for containerization
 
 
-│── Homepage.png       # Screenshot of the homepage
+│── Homepage.png               # Screenshot of the homepage
 
 
-│── Features1.png      # Screenshot of feature section 1
+│── Features1.png              # Screenshot of feature section 1
 
 
-│── Features2.png      # Screenshot of feature section 2
+│── Features2.png              # Screenshot of feature section 2
 
 
-│── README.md          # Documentation file
+│── README.md                  # Documentation file
 
 
-│── index.html         # Main HTML file (Frontend UI)
+│── index.html                 # Main HTML file (Frontend UI)
 
 
-│── index.js           # JavaScript file for interactivity
+│── index.js                   # JavaScript file for interactivity
 
 
-│── style.css          # CSS file for styling
+│── style.css                  # CSS file for styling
 
 
 **Run with Docker**
@@ -146,7 +146,7 @@ CMD ["nginx", "-g", "daemon off;"]
       
       docker rmi my-web-app     # Remove image
 
-💬 Contact & Support
+💬 Contact & Support:
 
 📧 Email: mohanchokkaku@gmail.com
 
