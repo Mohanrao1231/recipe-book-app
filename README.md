@@ -1,6 +1,6 @@
 
 
-***🌐 Recipe-Book-app**
+# 🌐 Recipe-Book-app
 
  A modern web application deployed with DevOps best practices.
 
@@ -72,7 +72,8 @@ Step 2: Run the Container
 
 
 
-***📌 Dockerfile Used***
+**📌 Dockerfile Used**
+
 This project is containerized using the following Dockerfile:
 
 dockerfile
@@ -92,6 +93,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 **🔗 Contributing**
+
 1)Fork the Repository
 
 
@@ -120,6 +122,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 **❓ FAQ**
+
 🔹 Can I run this project without Docker?
         Yes! Just open index.html in your browser.
 
