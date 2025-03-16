@@ -79,14 +79,26 @@ CMD ["nginx", "-g", "daemon off;"]
 
 **🔗 Contributing**
 1)Fork the Repository
+
+
+
 2)Clone Your Fork
      git clone https://github.com/Mohanrao1231/recipe-book-app.git
+
+
+     
 3)Create a Feature Branch
      checkout -b new-feature
+
+
+     
 4)Commit Changes & Push
      git add .
      git commit -m "Added new feature"
      git push origin new-feature
+
+
+     
 5)Create a Pull Request on GitHub.
 
 
