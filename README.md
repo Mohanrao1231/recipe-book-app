@@ -62,10 +62,13 @@ recipe-book-app/
 
 
 **Run with Docker**
+
 Step 1: Build the Docker Image
+
   ->    docker build -t my-web-app .
       
 Step 2: Run the Container
+
   ->    docker run -d -p 8080:80 my-web-app
 
 **Now open http://localhost:8080 in your browser**
@@ -80,15 +83,19 @@ This project is containerized using the following Dockerfile:
 dockerfile
 
 # Use an official Nginx image as the base
+
 FROM nginx:latest
 
 # Copy website files to the Nginx HTML directory
+
 COPY . /usr/share/nginx/html
 
 # Expose port 80
+
 EXPOSE 80
 
 # Start Nginx
+
 CMD ["nginx", "-g", "daemon off;"]
 
 
