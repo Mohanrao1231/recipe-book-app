@@ -1,0 +1,29 @@
+# db-deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-db-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-db
+  template:
+    metadata:
+      labels:
+        app: my-db
+    spec:
+      containers:
+        - name: my-db-container
+          image: mysql:5.7  # Use the MySQL image (you can change this to another DB if needed)
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: db_password
+            - name: MYSQL_DATABASE
+              value: "mydb"  # Name of your database
+          ports:
+            - containerPort: 3306
